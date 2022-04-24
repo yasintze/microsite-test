@@ -8,7 +8,7 @@ import HomePage from '../../pages/Home';
 import Navbar from '../Navbar';
 import { PhoneProvider } from '../../context';
 
-const defaultState = '021-12345678';
+const defaultState = '021-123456789';
 
 function App(): JSX.Element {
   const [inputValue, setInputValue] = useState(defaultState);
