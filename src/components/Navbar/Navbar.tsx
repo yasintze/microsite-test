@@ -9,7 +9,11 @@ const Navbar = () => {
   return (
     <Box bg='blue.800' color='white' py='1rem'>
       <Container maxW='container.lg'>
-        <Flex alignItems='center' justifyContent='space-between'>
+        <Flex
+          alignItems='center'
+          justifyContent='space-between'
+          direction={['column', 'row']}
+        >
           <Heading>ALAMI Website Test</Heading>
           <Flex gap='1rem'>
             {menus.map(({ to, label }) => (

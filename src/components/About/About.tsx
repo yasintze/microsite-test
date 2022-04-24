@@ -3,21 +3,23 @@ import { Box, Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
 
 const About = (): JSX.Element => {
   return (
-    <Flex gap={12}>
-      <Flex w={[1, 1 / 2, 1 / 3]} alignItems='center'>
-        <Box bg='blue.50' p={6} borderRadius='xl'>
+    <Flex gap={12} direction={['column', 'row']}>
+      <Flex w={['100%', '50%', '33.33%']}>
+        <Box bg='blue.50' p={6} borderRadius='xl' height={'100%'}>
           <Heading pb={4}>About 1</Heading>
-          <Text>
-            Dolore do elit do deserunt occaecat adipisicing elit ullamco
-            consequat. Ut ex culpa commodo in qui consequat tempor aliqua do.
-            Non consectetur occaecat proident nisi tempor. Sunt dolore sit elit
-            amet aute officia voluptate. Mollit Lorem et ex voluptate dolor
-            nulla. Eiusmod sit eiusmod exercitation mollit dolore aliquip magna
-            sunt.
-          </Text>
+          <Flex alignItems='center' height={'90%'}>
+            <Text>
+              Dolore do elit do deserunt occaecat adipisicing elit ullamco
+              consequat. Ut ex culpa commodo in qui consequat tempor aliqua do.
+              Non consectetur occaecat proident nisi tempor. Sunt dolore sit
+              elit amet aute officia voluptate. Mollit Lorem et ex voluptate
+              dolor nulla. Eiusmod sit eiusmod exercitation mollit dolore
+              aliquip magna sunt.
+            </Text>
+          </Flex>
         </Box>
       </Flex>
-      <Flex w={[1, 1 / 2, 2 / 3]}>
+      <Flex w={['100%', '50%', '66.67%']}>
         <Box bg='blue.200' p={6} borderRadius='xl'>
           <Heading pb={4}>About 2</Heading>
           <Grid templateColumns='repeat(2, 1fr)' gap={6}>
