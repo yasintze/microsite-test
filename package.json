@@ -2,6 +2,10 @@
   "name": "microsite-test-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": ">=7.20.6",
+    "node": ">=14.17.4"
+  },
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
