@@ -5,9 +5,15 @@ const About = (): JSX.Element => {
   return (
     <Flex gap={12} direction={['column', 'row']}>
       <Flex w={['100%', '50%', '33.33%']}>
-        <Box bg='blue.50' p={6} borderRadius='xl' height={'100%'}>
+        <Box
+          border='2px solid'
+          borderColor='blue.100'
+          p={6}
+          borderRadius='xl'
+          height={'100%'}
+        >
           <Heading pb={4}>About 1</Heading>
-          <Flex alignItems='center' height={'90%'}>
+          <Flex alignItems='center' height={'calc(100% - 60px)'}>
             <Text>
               Dolore do elit do deserunt occaecat adipisicing elit ullamco
               consequat. Ut ex culpa commodo in qui consequat tempor aliqua do.
@@ -20,7 +26,7 @@ const About = (): JSX.Element => {
         </Box>
       </Flex>
       <Flex w={['100%', '50%', '66.67%']}>
-        <Box bg='blue.200' p={6} borderRadius='xl'>
+        <Box border='2px solid' borderColor='blue.100' p={6} borderRadius='xl'>
           <Heading pb={4}>About 2</Heading>
           <Grid templateColumns='repeat(2, 1fr)' gap={6}>
             <GridItem>
