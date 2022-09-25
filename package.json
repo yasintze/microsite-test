@@ -7,7 +7,7 @@
     "node": ">=14.17.4"
   },
   "dependencies": {
-    "@chakra-ui/react": "1.8.8",
+    "@chakra-ui/react": "2.3.4",
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "@testing-library/jest-dom": "5.16.4",
